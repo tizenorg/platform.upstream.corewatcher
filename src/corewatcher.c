@@ -195,7 +195,7 @@ int main(int argc, char**argv)
 		return EXIT_SUCCESS;
 	}
 
-	sd_journal_print(LOG_INFO, "Nitra corewatcher %s", VERSION);
+	sd_journal_print(LOG_INFO, "Tizen corewatcher %s", VERSION);
 
 	inotify_thread = g_thread_new("corewatcherinot", inotify_loop, NULL);
 	if (inotify_thread == NULL)

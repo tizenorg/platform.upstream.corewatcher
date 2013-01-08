@@ -3,7 +3,7 @@
 autoreconf --install
 
 args="--prefix=/usr \
---libdir=/usr/lib64 \
+--libdir=/usr/lib \
 --sysconfdir=/etc"
 
 echo ./configure $args $@

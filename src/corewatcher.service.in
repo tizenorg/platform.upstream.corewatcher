@@ -1,11 +1,11 @@
 [Unit]
-Description=Nitra corefile monitor for collecting crash data
+Description=Tizen corefile monitor for collecting crash data
 DefaultDependencies=no
 After=sysinit.target
 
 [Service]
 Type=forking
-ExecStart=@prefix@/bin/corewatcher
+ExecStart=@prefix@/sbin/corewatcher
 Restart=always
 StartLimitInterval=300
 StartLimitBurst=2
