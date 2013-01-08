@@ -1,5 +1,5 @@
 AC_PREREQ([2.68])
-AC_INIT([nitra-corewatcher],[0.9.10],[timothy.c.pepper@linux.intel.com])
+AC_INIT([corewatcher],[0.9.11],[william.douglas@intel.com])
 AM_INIT_AUTOMAKE([foreign -Wall -Werror])
 AC_CONFIG_FILES([Makefile src/Makefile])
 AC_CONFIG_SRCDIR([src/corewatcher.c])
