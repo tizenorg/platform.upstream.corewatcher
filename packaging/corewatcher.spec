@@ -38,7 +38,7 @@ rm -rf %{buildroot}
 %defattr(-,root,root,-)
 %manifest corewatcher.manifest
 %config(noreplace) %{_sysconfdir}/corewatcher/corewatcher.conf
-%config(noreplace) %{_sysconfdir}/sysctl.d/95-core.conf
+%config(noreplace) %{_sysconfdir}/security/limits.d/95-core.conf
 %{_sysconfdir}/corewatcher/gdb.command
 %{_sbindir}/corewatcher
 %exclude /usr/share/man/man8/corewatcher.8.gz
