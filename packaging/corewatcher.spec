@@ -3,7 +3,7 @@ Summary:    A crash dump reporting tool
 Version:    0.9.11
 Release:    1
 Group:      System/Base
-License:    GPLv2
+License:	GPL-2.0
 Source0:    corewatcher-%{version}.tar.gz
 Source1001: packaging/corewatcher.manifest
 Requires:   gdb
