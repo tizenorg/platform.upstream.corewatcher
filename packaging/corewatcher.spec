@@ -35,6 +35,7 @@ rm -rf %{buildroot}
 %install_service multi-user.target.wants corewatcher.service
 
 %files
+%license COPYING
 %defattr(-,root,root,-)
 %manifest corewatcher.manifest
 %config(noreplace) %{_sysconfdir}/corewatcher/corewatcher.conf
