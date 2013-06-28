@@ -5,7 +5,7 @@ Release:    1
 Group:      System/Base
 License:	GPL-2.0
 Source0:    corewatcher-%{version}.tar.gz
-Source1001: packaging/corewatcher.manifest
+Source1001: corewatcher.manifest
 Requires:   gdb
 BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(libsystemd-journal)
@@ -35,6 +35,7 @@ rm -rf %{buildroot}
 %install_service multi-user.target.wants corewatcher.service
 
 %files
+%manifest %{name}.manifest
 %license COPYING
 %defattr(-,root,root,-)
 %manifest corewatcher.manifest
