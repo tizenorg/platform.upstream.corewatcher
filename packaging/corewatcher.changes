@@ -1,3 +1,6 @@
+* Thu Nov 20 2014 John L. Whiteman <john.l.whiteman@intel.com> submit/tizen_mobile/20141120.000000-1-g0394119
+- Fixed TC-2074: Static analysis issues
+
 * Sat May 11 2013 Anas Nashif <anas.nashif@intel.com> submit/tizen/20130509.173536@d377e7b
 - Set license using %license
 

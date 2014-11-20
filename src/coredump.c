@@ -188,12 +188,14 @@ static int move_core(char *fullpath, char *extension)
 	}
 	closedir(dir);
 	free(coreprefix);
+    coreprefix = NULL;
 
 	if (asprintf(&newpath, "%s%s.%s", processed_folder, corefilename, extension) == -1) {
 		ret = -1;
 		goto out;
 	}
 	free(corefilename);
+    corefilename = NULL;
 
 	rename(fullpath, newpath);
 	free(newpath);
